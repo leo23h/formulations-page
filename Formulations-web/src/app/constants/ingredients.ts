@@ -240,25 +240,6 @@ export const FORMULATIONS = [
             isLink: true,
             
          },
-        ]
-    },
-    {
-        id: 1,
-        formulationId: 2,
-        fase: "A",
-        ingredients: [
-         { 
-             name: "Cosmethicone SF 947B", 
-             INCI: "Cyclotetrasiloxane (and) Cyclopentasiloxane", 
-             functionality: "Emoliente", 
-             manufacturer: { 
-                 name: "Biomax"
-             }, 
-             percent: "50,00%",
-             description: "Silicona Especial, baja toxicidad y fácil de formular, características sensoriales y de volatilidad únicas para formulaciones de cuidado personal.",
-            isLink: true,
-            
-         },
          { 
             name: "Cosmethicone SF 916", 
             INCI: "Cyclopentasiloxane (and) Dimethicone", 
@@ -442,24 +423,6 @@ export const FORMULATIONS = [
             percent: "20,00%",
             description: "Es la más suave de todas las arcillas, eficaz para el control de la grasa, mejora la elasticidad y reafirmación de la piel, estimula la circulación de la piel, mientras exfolia y limpia suavemente, ideal para pieles sensibles.",
             isLink: true,
-         },
-        ]
-    },
-    {
-        id: 3,
-        formulationId: 3,
-        fase: "D",
-        ingredients: [
-        { 
-            name: "Agua", 
-            INCI: "Water", 
-            functionality: "Diluente", 
-            manufacturer: { 
-                name: "-"
-            }, 
-            percent: "3,40%",
-            description: "",
-            isLink: false,
          },
         ]
     },
@@ -806,7 +769,7 @@ export const FORMULATIONS = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         formulationId: 4,
         fase: "G",
         ingredients: [
