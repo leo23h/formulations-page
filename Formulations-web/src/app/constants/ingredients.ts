@@ -389,7 +389,7 @@ export const FORMULATIONS = [
             INCI: "Butyrospermum Parkii (Shea Butter) Fruit", 
             functionality: "Emoliente", 
             manufacturer: { 
-                name: "Terry Lab."
+                name: "Terry Lab"
             }, 
             percent: "2,00%",
             description: "Ingrediente natural con propiedades hidratantes y nutritivas, conserva la flexibilidad y elasticidad de la piel, es anti edad, antioxidante y calmante, ideal para formulaciones suaves y pieles sensibles.",
