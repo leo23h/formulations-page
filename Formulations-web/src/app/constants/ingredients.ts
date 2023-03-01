@@ -631,5 +631,198 @@ export const FORMULATIONS = [
             }
         ]
     },
+    {
+        id: 1,
+        formulationId: 4,
+        fase: "A",
+        ingredients: [
+            { 
+                name: "AGUA", 
+                INCI: "Water", 
+                functionality: "Diluente", 
+                manufacturer: { 
+                    name: "-"
+                }, 
+                percent: "75,80%",
+                description: "",
+                isLink: false,
+            },
+            { 
+                name: "EDTA DISODICO", 
+                INCI: "Disodium EDTA", 
+                functionality: "Quelante", 
+                manufacturer: { 
+                    name: "-"
+                }, 
+                percent: "0,05%",
+                description: "",
+                isLink: false,
+            },
+            { 
+                name: "CARBOPOL® ULTREZ 30", 
+                INCI: "Carbomer", 
+                functionality: "Modificador Reológico", 
+                manufacturer: { 
+                    name: "Lubrizol"
+                }, 
+                percent: "0,3%",
+                description: "Modificador reológico superior, fácil de usar permite un rendimiento constante a niveles de pH bajos, experiencia sensorial agradable, excelente reología y suspensión",
+                isLink: true,
+            },
+            { 
+                name: "ZEMEA", 
+                INCI: "Propanediol", 
+                functionality: "Humectante", 
+                manufacturer: { 
+                    name: "DuPont"
+                }, 
+                percent: "5,0%",
+                description: "",
+                isLink: false,
+            }
+        ]
+    },
+    {
+        id: 2,
+        formulationId: 4,
+        fase: "B",
+        ingredients: [
+            { 
+                name: "Novaoil™ COCO", 
+                INCI: "Cocos Nucifera (Coconut) Oil, Olus (Vegetable) Oil.", 
+                functionality: "Emoliente", 
+                manufacturer: { 
+                    name: "Novachem"
+                }, 
+                percent: "1,2%",
+                description: "Aceite de alta calidad y pureza, obtenido por proceso de prensado en frío.  100% natural,  adecuado para todas las aplicaciones. Con todos los beneficios del Coco.",
+                isLink: true,
+            },
+            { 
+                name: "Novemer™ EC-1 polymer", 
+                INCI: "Acrylates/Acrylamide Copolymer (and) Mineral Oil (and) Polysorbate 85", 
+                functionality: "Emulsificante", 
+                manufacturer: { 
+                    name: "Lubrizol"
+                }, 
+                percent: "1,0%",
+                description: "Polímero multifuncional de fácil uso desarollado para emulsiones O/W. Modificador reológico de emulsión inversa versátil para facilitar el procesamiento, se dispersa en aceite, emulsiona con eficacia una amplia gama de aceites, sin las limitaciones del HLB, adición simple y versátil en cualquier etapa del procesamiento en caliente o frío.",
+                isLink: true,
+            }
+        ]
+    },
+    {
+        id: 3,
+        formulationId: 4,
+        fase: "C",
+        ingredients: [
+            { 
+                name: "AMP ULTRA PC 2000", 
+                INCI: "Aminomethyl propanol", 
+                functionality: "Regulador de pH", 
+                manufacturer: { 
+                    name: "Angus"
+                }, 
+                percent: "QSP",
+                description: "",
+                isLink: false,
+            }
+        ]
+    },
+    {
+        id: 4,
+        formulationId: 4,
+        fase: "D",
+        ingredients: [
+            { 
+                name: "Hydraskyn™", 
+                INCI: "Saccharomyces lysate filtrate", 
+                functionality: "Activo hidratante osmoprotector", 
+                manufacturer: { 
+                    name: "Novachem"
+                }, 
+                percent: "2,6%",
+                description: "Activo Biotecnológico, Postbiótico y Osmoprotector. Hidrata en forma de cascada las capas más profundas de la piel. Brinda equilibrio en la función de la barrera de la piel.",
+                isLink: true,
+            },
+            { 
+                name: "Lumiglow™", 
+                INCI: "Aristotelia chilensis fruit extract.", 
+                functionality: "Activo que aumenta la luminosidad", 
+                manufacturer: { 
+                    name: "Novachem"
+                }, 
+                percent: "3,0%",
+                description: "Activo 100 % natural, aumenta el glowing , la luminosidad, unifica el tono natural propio de la piel, previene y reduce la hiperpigmentación.  Vitamin C-like, aumenta la radiancia y la luminosidad, unifica el tono, disminuye el enrojecimiento, ayuda a disminuir la irritación y la hiperpigmentación, tiene alto poder antioxidante.",
+                isLink: true,
+            }
+        ]
+    },
+    {
+        id: 5,
+        formulationId: 4,
+        fase: "E",
+        ingredients: [
+            { 
+                name: "AGUA", 
+                INCI: "Water", 
+                functionality: "Diluente", 
+                manufacturer: { 
+                    name: "-"
+                }, 
+                percent: "10,00%",
+                description: "",
+                isLink: false,
+            },
+            { 
+                name: "ÁCIDO HIALURÓNICO™", 
+                INCI: "Sodium hyaluronate", 
+                functionality: "Activo Anti-age", 
+                manufacturer: { 
+                    name: "Contipro"
+                }, 
+                percent: "0,10%",
+                description: "Polisacárido lineal de alto peso molecular. Efecto reafirmante basado en las propiedades hidrofílicas del ácido hialurónico. Mejora la hidratación de la piel y restaura la función de barrera cutánea. Peso Molecular: 1.3 - 2.3 Mda",
+                isLink: true,
+            }
+        ]
+    },
+    {
+        id: 6,
+        formulationId: 4,
+        fase: "F",
+        ingredients: [
+            { 
+                name: "EUXYL K 712", 
+                INCI: "Sodium Benzoate (and) Potassium Sorbate (and) Aqua", 
+                functionality: "Preservante", 
+                manufacturer: { 
+                    name: "Ashland"
+                }, 
+                percent: "0,75%",
+                description: "Conservante líquido con una fuerte eficacia de amplio espectro contra bacterias, levaduras y mohos. Esta mezcla suave se puede utilizar para cosméticos naturales certificados y tiene una buena eficacia en la fase de vapor.",
+                isLink: true,
+            },
+        ]
+    },
+    {
+        id: 6,
+        formulationId: 4,
+        fase: "G",
+        ingredients: [
+            { 
+                name: "FRAGANCIA", 
+                INCI: "Parfum", 
+                functionality: "Oal Meal", 
+                manufacturer: { 
+                    name: "Firmenich"
+                }, 
+                percent: "0,20%",
+                description: "Fragancia Personal Care, elegante, que evoca una belleza clásica, nos muestra un universo olfativo Gourmand, con notas de leche, crema, musk, ámbar y sándalo.",
+                isLink: true,
+            },
+        ]
+    }
+
 
 ]
