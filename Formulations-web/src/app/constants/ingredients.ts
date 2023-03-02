@@ -1,4 +1,4 @@
-export const FORMULATIONS = [
+export const INGREDIENTS = [
   {
     id: 1,
     formulationId: 1,

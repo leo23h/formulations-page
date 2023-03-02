@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<!-- <router-outlet></router-outlet> -->
+
 <div class="body">
   <header>
     <div class="row">
@@ -27,64 +27,7 @@
       </div>
     </div>
     <!-- lista de formulaciones -->
-    <div class="row pd-row">
-      <div class="formulation-list" *ngFor="let item of formulationList;">
-        <div class="container-row-l" *ngIf="item.id % 2 != 0">
-          <div class="bar col-9 offset-2 text-center" [ngClass]="item.class_color">
-            <span class="title-bar">{{item.name}}</span>
-          </div>
-          <div class="row">
-            <div class="col-10 offset-1 d-flex pb-5" [ngClass]="item.id != 4 ? 'b-bottom' : ''">
-              <div class="col-4">
-                <div class="circle-e d-flex align-items-center justify-content-center">
-                  <div class="circle-i d-flex align-items-center justify-content-center">
-                    <img class="img-form" [src]="item.image">
-                  </div>
-                </div>
-              </div>
-              <div class="col-8 pl-4">
-                 <div class="col-12 pt-5 ps-5">
-                  <span class="f-desc">
-                    {{item.description}}
-                  </span>
-                 </div>
-                 <div class="col-12 d-flex ps-5 pt-5">
-                  <span class="text-link-for">Ver formulación</span>
-                  <img class="img-link-form ms-4" src="../assets/ico_show_more_circle.svg">
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-row-r" *ngIf="item.id % 2 == 0">
-          <div class="bar col-9 offset-1 text-left" [ngClass]="item.class_color">
-            <span class="title-bar ms-5 ps-3">{{item.name}}</span>
-          </div>
-          <div class="row">
-            <div class="col-10 offset-1 d-flex pb-5" [ngClass]="item.id != 4 ? 'b-bottom' : ''">
-              <div class="col-8 pl-4">
-                <div class="col-12 px-5 pt-5">
-                 <span class="f-desc">
-                  {{item.description}}
-                 </span>
-                </div>
-                <div class="col-12 d-flex ps-5 pt-5">
-                 <span class="text-link-for">Ver formulación</span>
-                 <img class="img-link-form ms-4" src="../assets/ico_show_more_circle.svg">
-                </div>
-             </div>
-              <div class="col-4">
-                <div class="circle-e d-flex align-items-center justify-content-center">
-                  <div class="circle-i d-flex align-items-center justify-content-center">
-                    <img class="img-form" [src]="item.image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
   </section>
   <footer>
     <div class="row">
@@ -92,8 +35,10 @@
         <div class="col-8 mt-5 pt-5 d-flex">
           <span class="txt-footer mt-5">Escanea el código para conocer más de nosotros</span>
         </div>
-        <div class="col-3 text-center">
-          <img class="img-qr" src="../assets/QR_fehrmann.jpeg">
+        <div class="col-3 mx-auto">
+          <div class="b-qr">
+            <img class="img-qr" src="../assets/QR_fehrmann.jpeg">
+          </div>
         </div>
       </div>
     </div>

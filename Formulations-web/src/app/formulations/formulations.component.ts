@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FORMULATIONS } from '../constants/formulations';
 
 @Component({
   selector: 'app-formulations',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulations.component.css']
 })
 export class FormulationsComponent implements OnInit {
+  formulationList: any = FORMULATIONS;
 
   constructor() { }
 

@@ -8,7 +8,7 @@ import { FORMULATIONS } from './constants/formulations';
 })
 export class AppComponent implements OnInit{
   title = 'Formulations-web';
-  formulationList: any = FORMULATIONS;
+  
 
   constructor() {}
   
