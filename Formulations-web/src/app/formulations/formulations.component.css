@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 /* title bar */
 .bar{
     height: 128px;
@@ -81,10 +84,12 @@
 
 .container-row-l{
     padding-bottom: 8em;
+    cursor: pointer;
 }
 
 .container-row-r{
     padding-bottom: 8em;
+    cursor: pointer;
 }
 
 .b-bottom{

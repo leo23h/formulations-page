@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FORMULATIONS } from '../constants/formulations';
 
 @Component({
@@ -9,9 +10,13 @@ import { FORMULATIONS } from '../constants/formulations';
 export class FormulationsComponent implements OnInit {
   formulationList: any = FORMULATIONS;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToIngredients(id: string){
+    this.router.navigate([`/ingredients/${id}`]);
   }
 
 }
