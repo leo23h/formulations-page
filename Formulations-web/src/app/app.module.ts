@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { FormulationsComponent } from './formulations/formulations.component';
 import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { IngredientDetailComponent } from './ingredient-detail/ingredient-detail.component';
+import { ProviderDetailComponent } from './provider-detail/provider-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IngredientsComponent,
-    FormulationsComponent
+    FormulationsComponent,
+    IngredientDetailComponent,
+    ProviderDetailComponent
   ],
   imports: [
     BrowserModule,

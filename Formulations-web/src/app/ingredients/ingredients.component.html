@@ -34,7 +34,7 @@
                     <div class="col-12" *ngFor="let ingr of item.ingredients">
                         <div class="d-flex px-0 py-4 border-bottom">
                             <div class="col-3 px-5 row align-items-center">
-                                <a href="#" class="d-flex justify-content-between align-items-center px-0">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-0" data-bs-toggle="modal" data-bs-target="#modalIngredientDetail">
                                     <div class="col-7">
                                         <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
                                     </div>
@@ -42,6 +42,7 @@
                                         <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
                                     </div>
                                 </a>
+                                <app-ingredient-detail></app-ingredient-detail>
                             </div>
                             <div class="col-3 px-0 text-left d-flex align-items-center">
                                 <span class="txt-row ps-5 ms-5">{{ingr.INCI}}</span>
