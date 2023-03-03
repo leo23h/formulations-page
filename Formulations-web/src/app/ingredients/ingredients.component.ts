@@ -15,6 +15,11 @@ export class IngredientsComponent implements OnInit, OnDestroy {
   ingredientList: any[] = INGREDIENT_LIST;
   ingredientsListData: any[] = [];
   formulationData: any = {};
+  modalIdIngredients: string;
+  ingredientData: any = {};
+  providerData: any = {};
+  cont = 0;
+  cont2 = 0;
 
   constructor(private route: ActivatedRoute, private formulationsService: FormulationsService) { }
 
@@ -22,11 +27,11 @@ export class IngredientsComponent implements OnInit, OnDestroy {
     this.id = this.route.snapshot.params['id'];
     this.getFormulation(parseInt(this.id));
     console.log("id del params",this.id);
-    this.formulationsService.clearData();
+    this.formulationsService.sendData('0');
   }
 
   ngOnDestroy(): void {
-    this.formulationsService.clearData();
+    this.formulationsService.sendData('0');
   }
 
   getFormulation(id){
@@ -44,7 +49,24 @@ export class IngredientsComponent implements OnInit, OnDestroy {
     }
     this.ingredientsListData = arrayTemp;
     console.log("objetos encontrados", this.ingredientsListData);
+  }
 
+  openModalIngredients(item: any){
+    this.cont = this.cont + 1;
+    let obj = {
+      data: item,
+      cont: this.cont
+    }
+    this.ingredientData = obj;
+  }
+
+  viewInfoProvider(item: any){
+    this.cont2 = this.cont2 + 1;
+    let obj = {
+      data: item,
+      cont: this.cont2
+    }
+    this.providerData = obj;
   }
 
 }

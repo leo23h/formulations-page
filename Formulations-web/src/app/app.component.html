@@ -4,10 +4,12 @@
   <header>
     <div class="row">
       <div class="col-12 pt-5 px-5">
-        <img class="img-brand" src="../assets/fehrmann_brand.svg">
+        <a href="#" (click)="backToViewMain()">
+          <img class="img-brand" src="../assets/fehrmann_brand.svg">
+        </a>
       </div>
       <div class="col-12 px-5" *ngIf="showOptionBeforePage">
-        <a class="d-flex justify-content-end" href="javascript:void(0)" (click)="backToViewMain()">
+        <a class="d-flex justify-content-end" href="#" (click)="backToViewMain()">
           <span class="me-5 mt-4 txt-btn-back">Volver</span>
           <img class="img-back" src="../assets/ico_button_white_back.svg">
         </a>

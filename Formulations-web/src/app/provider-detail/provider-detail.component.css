@@ -60,3 +60,11 @@
 .border-r{
     border-right: 1px solid #B9B9B9;
 }
+
+.img-provider{
+    width: 93%;
+}
+
+.img-provider-custom{
+    width: 40%;
+}

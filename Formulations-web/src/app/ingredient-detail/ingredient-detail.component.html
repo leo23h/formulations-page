@@ -1,14 +1,14 @@
-<div class="modal fade" id="modalIngredientDetail" tabindex="-1" aria-labelledby="modalIngredientDetailLabel" aria-hidden="true">
+<div class="modal fade" id="modalIngredientDetail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" tabindex="-1" aria-labelledby="modalIngredientDetailLabel" aria-hidden="true">
     <div class="modal-dialog custom">
       <div class="modal-content">
         <div class="modal-header">
-          <div class="fs-5 modal-title ps-5 ms-5" id="modalIngredientDetailLabel">D-Pantenol</div>
+          <div class="fs-5 modal-title ps-5 ms-5" id="modalIngredientDetailLabel">{{ingredient?.name}}</div>
           <button type="button" class="btn-close me-3" data-bs-dismiss="modal">
             <img src="../../assets/ico_close.svg" >
           </button>
         </div>
         <div class="modal-body p-5 m-4">
-            <p class="text-desc">Activo hidratante, cicatrizante y antiinflamatorio. Es la provitamina del ácido D-pantoténico (Vitamina B5), que juega un papel clave en el metabolismo intermediario humano. En el cabello actúa como humectante de larga duración, previene el daño del cabello, espesa el cabello y mejpra el brillo.</p>
+            <p class="text-desc">{{ingredient?.description}}</p>
         </div>
       </div>
     </div>

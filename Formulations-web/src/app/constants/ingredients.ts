@@ -45,7 +45,7 @@ export const INGREDIENT_LIST = [
           name: "Lubrizol",
         },
         percent: "0,45%",
-        descrption:
+        description:
           "Modificador reológico superior, fácil de usar permite un rendimiento constante a niveles de pH bajos, experiencia sensorial agradable, excelente reología y suspensión",
         isLink: true,
       },

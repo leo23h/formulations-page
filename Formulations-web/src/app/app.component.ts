@@ -23,15 +23,18 @@ export class AppComponent implements OnInit, OnDestroy{
       if(value && value !== ""){
         this.showOptionBeforePage = true;
         this.showTitle = false;
-      }else{
+      }else if(value && value !== "0"){
         this.showOptionBeforePage = false;
         this.showTitle = true;
+      }else if(value && value == ""){
+        this.showOptionBeforePage = false;
+        this.showTitle = false;
       }
     });
   }
   ngOnInit(): void {
+    this.backToViewMain();
   }
-  
 
   ngOnDestroy(): void {
     console.log("entro en el destroy")
@@ -39,6 +42,7 @@ export class AppComponent implements OnInit, OnDestroy{
   }
 
   backToViewMain(){
+    this.formulationService.clearData();
     this.router.navigate(['/']);
   }
 }

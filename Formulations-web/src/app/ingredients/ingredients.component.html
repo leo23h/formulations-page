@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="col-12 px-4-custom">
-            <div class="card-row row my-5" *ngFor="let item of ingredientsListData">
+            <div class="card-row row my-5" *ngFor="let item of ingredientsListData; let i = index">
                 <div class="col-1 d-flex justify-content-center align-items-center text-center brd-left-r" [ngClass]="formulationData.text_color" [ngStyle]="{'background':formulationData.background_fase}" >
                     <span class="txt-fase">{{item.fase}}</span>
                 </div>
@@ -34,7 +34,7 @@
                     <div class="col-12" *ngFor="let ingr of item.ingredients">
                         <div class="d-flex px-0 py-4 border-bottom">
                             <div class="col-3 px-5 row align-items-center">
-                                <a href="#" class="d-flex justify-content-between align-items-center px-0" data-bs-toggle="modal" data-bs-target="#modalIngredientDetail">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-0" (click)="openModalIngredients(ingr)" data-bs-toggle="modal" data-bs-target="#modalIngredientDetail">
                                     <div class="col-7">
                                         <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
                                     </div>
@@ -42,7 +42,7 @@
                                         <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
                                     </div>
                                 </a>
-                                <app-ingredient-detail></app-ingredient-detail>
+                                <app-ingredient-detail [ingredientInfo]="ingredientData"></app-ingredient-detail>
                             </div>
                             <div class="col-3 px-0 text-left d-flex align-items-center">
                                 <span class="txt-row ps-5 ms-5">{{ingr.INCI}}</span>
@@ -52,15 +52,15 @@
                             </div>
                             <div class="col-3 align-items-center ps-5 row text-left">
                                 <span class="px-5 txt-row w-100" *ngIf="!(ingr.isLink)">{{ingr.manufacturer.name}}</span>
-                                <a href="#" class="d-flex align-items-center justify-content-between px-0" *ngIf="ingr.isLink" data-bs-toggle="modal" data-bs-target="#modalProviderDetail">
+                                <a href="#" class="d-flex align-items-center justify-content-between px-0" *ngIf="ingr.isLink" data-bs-toggle="modal" data-bs-target="#modalProviderDetail" (click)="viewInfoProvider(ingr)">
                                     <div class="col-7 ps-5">
-                                        <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
+                                        <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.manufacturer.name}}</span>
                                     </div>
                                     <div class="col-5 align-items-center btn-next d-flex justify-content-center bar-rose mr-4 me-4" [ngClass]="formulationData.class_color">
                                         <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
                                     </div>
                                 </a>
-                                <app-provider-detail></app-provider-detail>
+                                <app-provider-detail [providerInfo]="providerData"></app-provider-detail>
                             </div>
                             <div class="align-items-center col-1 d-flex justify-content-end ms-4">
                                 <span class="txt-row">{{ingr.percent}}</span>
