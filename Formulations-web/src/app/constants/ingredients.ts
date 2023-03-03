@@ -1,4 +1,4 @@
-export const INGREDIENTS = [
+export const INGREDIENT_LIST = [
   {
     id: 1,
     formulationId: 1,

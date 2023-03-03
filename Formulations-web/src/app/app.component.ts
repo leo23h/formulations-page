@@ -31,6 +31,7 @@ export class AppComponent implements OnInit, OnDestroy{
   }
   ngOnInit(): void {
   }
+  
 
   ngOnDestroy(): void {
     console.log("entro en el destroy")

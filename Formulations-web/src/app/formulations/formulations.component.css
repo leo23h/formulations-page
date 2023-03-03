@@ -7,22 +7,6 @@ a{
     border-radius: 46px;
 }
 
-.bar-rose{
-    background: #E55581;
-}
-
-.bar-green{
-    background: #98AE00;
-}
-
-.bar-blue{
-    background: #3CA3DF;
-}
-
-.bar-purple{
-    background: #695F99;
-}
-
 .title-bar{
     font-family: 'OpenSans';
     font-size: 70px;

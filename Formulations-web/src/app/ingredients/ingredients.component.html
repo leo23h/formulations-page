@@ -1,1 +1,73 @@
+<div class="continer-vew">
+    <div class="row">
+        <div class="col-11 offset-1 d-flex pb-5">
+            <div class="col-3">
+                <div class="circle-ext d-flex align-items-center justify-content-center">
+                    <div class="circle-int d-flex align-items-center justify-content-center">
+                    <img class="img-form" [src]="formulationData.image" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 text-start">
+                <span class="title-formulations txt-rose ps-5" [ngClass]="formulationData.text_color">{{ formulationData.name }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row px-3">
+        <div class="col-12 px-5">
+            <!-- barra header title -->
+            <div class="bar-header-title d-flex align-items-center" [ngClass]="formulationData.class_color">
+                <span class="col-1 txt-header-tb text-center">Fase</span>
+                <span class="col-3 txt-header-tb text-center">Ingredientes</span>
+                <span class="col-3 txt-header-tb text-center">INCI</span>
+                <span class="col-2 txt-header-tb text-left">Funcionalidad</span>
+                <span class="col-2 txt-header-tb text-left">Fabricante</span>
+                <span class="col-1 text-left txt-header-tb ps-5">%</span>
+            </div>
+        </div>
+        <div class="col-12 px-4-custom">
+            <div class="card-row row my-5" *ngFor="let item of ingredientsListData">
+                <div class="col-1 d-flex justify-content-center align-items-center text-center brd-left-r" [ngClass]="formulationData.text_color" [ngStyle]="{'background':formulationData.background_fase}" >
+                    <span class="txt-fase">{{item.fase}}</span>
+                </div>
+                <div class="align-items-center justify-content-end ps-2 row col-11 ms-2">
+                    <div class="col-12" *ngFor="let ingr of item.ingredients">
+                        <div class="d-flex px-0 py-4 border-bottom">
+                            <div class="col-3 px-5 row align-items-center">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-0">
+                                    <div class="col-7">
+                                        <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
+                                    </div>
+                                    <div class="btn-next d-flex align-items-center justify-content-center" [ngClass]="formulationData.class_color">
+                                        <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-3 px-0 text-left d-flex align-items-center">
+                                <span class="txt-row ps-5 ms-5">{{ingr.INCI}}</span>
+                            </div>
+                            <div class="col-2 align-items-center d-flex justify-content-center ps-5 text-left">
+                                <span class="ps-5 txt-row w-100">{{ingr.functionality}}</span>
+                            </div>
+                            <div class="col-3 align-items-center ps-5 row text-left">
+                                <span class="px-5 txt-row w-100" *ngIf="!(ingr.isLink)">{{ingr.manufacturer.name}}</span>
+                                <a href="#" class="d-flex align-items-center justify-content-between px-0" *ngIf="ingr.isLink">
+                                    <div class="col-7 ps-5">
+                                        <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
+                                    </div>
+                                    <div class="col-5 align-items-center btn-next d-flex justify-content-center bar-rose mr-4 me-4" [ngClass]="formulationData.class_color">
+                                        <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="align-items-center col-1 d-flex justify-content-end ms-4">
+                                <span class="txt-row">{{ingr.percent}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
