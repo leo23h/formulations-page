@@ -52,7 +52,7 @@
                             </div>
                             <div class="col-3 align-items-center ps-5 row text-left">
                                 <span class="px-5 txt-row w-100" *ngIf="!(ingr.isLink)">{{ingr.manufacturer.name}}</span>
-                                <a href="#" class="d-flex align-items-center justify-content-between px-0" *ngIf="ingr.isLink">
+                                <a href="#" class="d-flex align-items-center justify-content-between px-0" *ngIf="ingr.isLink" data-bs-toggle="modal" data-bs-target="#modalProviderDetail">
                                     <div class="col-7 ps-5">
                                         <span class="txt-link-arrow w-100" [ngClass]="formulationData.text_color">{{ingr.name}}</span>
                                     </div>
@@ -60,6 +60,7 @@
                                         <img class="arrow-next" src="../../assets/ico_arrow_next.svg">
                                     </div>
                                 </a>
+                                <app-provider-detail></app-provider-detail>
                             </div>
                             <div class="align-items-center col-1 d-flex justify-content-end ms-4">
                                 <span class="txt-row">{{ingr.percent}}</span>
