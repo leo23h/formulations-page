@@ -37,6 +37,6 @@ export const FORMULATIONS = [
         class_color: "bar-blue",
         text_color:"txt-blue",
         background_fase: "#DBF0FD",
-        description: "diseñado para nutrir de medios a puntas, alto contenido oleico, elaborado con materias primas obtenidas por procesos de biofermentación y con múltiples beneficios para el cabello."
+        description: "Diseñado para nutrir de medios a puntas, alto contenido oleico, elaborado con materias primas obtenidas por procesos de biofermentación y con múltiples beneficios para el cabello."
      }
 ]
