@@ -10,7 +10,7 @@ export const FORMULATIONS = [
         description: "Ingredientes naturales y tecnologías innovadoras hacen parte de está formulación que brinda sensación de bienestar, mejora visiblemente la apariencia sobre el contorno de los ojos. Su aspecto sensorial lujoso y la interacción de sus ingredientes."
      },
      {
-        id: 2,
+        id: 4,
         name: "Biotech Luminous Serum",
         slogan: "¡Renueva tú piel!",
         image: "../assets/imagenes_formulaciones/biotech_luminous_serum.png",
@@ -30,7 +30,7 @@ export const FORMULATIONS = [
         description: "Ingredientes naturales, biotecnológicos, desintoxicantes y un formato innovador hacen parte de esta formulación. La Matcha y la Oliva aportan suavidad, nutrición, sensación calmante y revitalizante."
      },
      {
-        id: 4,
+        id: 2,
         name: "Ocean Magnificent Elixir",
         slogan: "¡Poderoso Elixir capilar",
         image: "../assets/imagenes_formulaciones/ocean_magnificent_elixir.png",
